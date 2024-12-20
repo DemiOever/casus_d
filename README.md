@@ -11,8 +11,8 @@ assemblix:/data/datasets/thema10/
 ```
 
 De data is opgedeeld in 2 verschillende mappen:
-- `idc_regular.zip`: per patiënt een map met daarin 2 submappen, `0` en `1`. In beide submappen zitten afbeeldingen van de 50*50 pixels.
-- `complete_images.zip`: per patiënt één beeld met alle kleine tegels op de juiste plek geplaatst.
+- `idc_regular.zip`: per patiënt een map met daarin 2 submappen, `0` en `1`. In beide submappen zitten afbeeldingen van de 50*50 pixels die tumor cellen (1) of gezonde cellen (0) bevatten.
+- `complete_images.zip`: per patiënt één beeld met alle kleine tegels (afbeeldingen uit `idc_regular.zip`) op de juiste plek geplaatst.
 
 De betekenis van de twee klassen:
 - **Klasse 0:** IDC negative weefsel
@@ -41,15 +41,21 @@ https://github.com/DemiOever/casus_d.git
 
 Let op: het downloaden van de data en het runnen van de bestanden heeft een behoorlijke tijd nodig.
 
+De notebooks kunnen ook gerund worden op eigen datasets. Hierbij moeten de paden (aangegeven in de notebooks zelf) worden veranderd naar de eigen dataset. Daarbij moeten de bovengenoemde structuren worden aangehouden, anders functioneert de code niet.
+
+## Example
+In `first_model.ipynb` worden de standaard methoden (data snappen, data inladen, trainen en evalueren) voor beeldherkenning met Machine Learning op kleding getest. Deze notebook kan helpen bij het begrijpen van beeldherkenning met Keras (Machine learning).
+
 ## Dependencies
 - Python 3.11.2 of nieuwere versies
-- Numpy
-- Tensorflow
+- Numpy (2.2.0)
+- Tensorflow (2.18.0)
 - os
-- Keras
-- Seaborn
-- Matplotlib
-- cv2 uit opencv-python
+- Pillow (9.3.0)
+- Keras (3.7.0)
+- Seaborn (0.13.2)
+- Matplotlib (3.9.3)
+- cv2 uit opencv-python (4.10.0.84)
 
 ## Support
 Wanneer je tegen problemen aanloopt of vragen hebt, neem dan contact op met een of beide auteuren.
