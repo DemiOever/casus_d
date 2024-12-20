@@ -6,7 +6,9 @@ In de huidige wereld gaat Machine Learning en AI een steeds grotere rol spelen, 
 De dataset bestaat uit data van 279 verschillende patiënten. Hierbij gaat het om foto's van histologische uitsnedes van weefsel uit de borstklier. <br><br>
 
 De data is te vinden op: <br>
-`assemblix:/data/datasets/thema10/`
+```bash
+assemblix:/data/datasets/thema10/
+```
 
 De data is opgedeeld in 2 verschillende mappen:
 - `idc_regular.zip`: per patiënt een map met daarin 2 submappen, `0` en `1`. In beide submappen zitten afbeeldingen van de 50*50 pixels.
@@ -27,6 +29,17 @@ Hierbij geldt:
 - `class0` en `class1` respectievelijk IDC negative en IDC positive uitsneden tonen
 
 ## Usage
+1. Kloon de repo:
+```bash
+https://github.com/DemiOever/casus_d.git
+```
+2. Haal de data op (zie kopje 'Dataset') en pak de bestanden uit.
+3. Zorg dat de data binnen de repository staat. 
+4. Klik op `Run All` in het bestand `data_loading.ipynb`.
+4. Klik op `Run All` in het bestand `model_training.ipynb`.
+5. Klik op `Run All` in het bestand `yolo.ipynb`.
+
+Let op: het downloaden van de data en het runnen van de bestanden heeft een behoorlijke tijd nodig.
 
 ## Dependencies
 - Python 3.11.2 of nieuwere versies
